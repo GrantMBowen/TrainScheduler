@@ -9,26 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Roboto&display=swap" rel="stylesheet">
 
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 </head>
 
 <body>
-    <div class="jumbotron">
+
+    <div class="jumbotron text-light bg-dark">
         <h1 class="display-4 text-center">Train Schedule</h1>
         <p class="lead text-center">Making the Trains Run on Time</p>
     </div>
-    <!-- //     * Train Name
-    
-    //     * Destination 
-        
-    //     * First Train Time -- in military time
-        
-    //     * Frequency -- in minutes
-      
-    //   * Code this app to calculate when the next train will arrive; this should be relative to the current time.
-       -->
+
+
+
     <div id="schedule">
         <table class="table text-light bg-dark">
             <thead>
@@ -44,21 +39,6 @@
             </thead>
             <tbody id="full-train-list">
 
-                <tr>
-                    <th scope="row">City of New Orleans</th>
-                    <td>Chicago, IL</td>
-                    <td>7:00</td>
-                    <td>15 min</td>
-                    <td>XX</td>
-
-                </tr>
-                <tr>
-                    <th scope="row">The Katy</th>
-                    <td>Galveston, TX</td>
-                    <td>9:30</td>
-                    <td>60 min</td>
-                    <td>XX</td>
-                </tr>
                 <tr>
                     <th scope="row">Hogwart's Express</th>
                     <td>Hogwarts, GB</td>
@@ -79,8 +59,8 @@
 
             </div>
 
-            <div class="col-7">
-                <div class="card" style="width: 40rem;">
+            <div class="col-9">
+                <div class="card" style="width: 50rem;">
                     <div class="card-body">
                         <h5 class="card-title">Add a Train</h5>
                         <h6 class="card-subtitle mb-2 text-muted">What lines are you running?</h6>
@@ -94,7 +74,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="destination-input">Destination</label>
-                                <input type="role" class="form-control" id="destination-input" placeholder="Enter Destination">
+                                <input type="role" class="form-control" id="destination-input"
+                                    placeholder="Enter Destination">
                             </div>
                             <div class="form-group">
                                 <label for="First-train">First Train Runs @:</label>
@@ -103,7 +84,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="frequency-input">Frequency</label>
-                                <input type="rate" class="form-control" id="frequency-input" placeholder="How often does the train run?">
+                                <input type="rate" class="form-control" id="frequency-input"
+                                    placeholder="How often does the train run?">
                             </div>
 
                             <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
@@ -112,13 +94,13 @@
                 </div>
             </div>
 
-            <div class="col-sm">
-                <img src="https://via.placeholder.com/300x500?text=300x500+Half+Page+Ad
-
-                C/O https://placeholder.com/banner-ads/#120215600_Skyscraper" alt="advert">
+            <div class="col">
+                
             </div>
         </div>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

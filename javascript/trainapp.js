@@ -96,3 +96,7 @@ $.when(event).done(function(){
     }, function(errorObject) {
       console.log("The read failed: " + errorObject.code);
     });
+
+    $("#submit-button").click(function () {
+        $("form").trigger("reset");
+    });

@@ -1,10 +1,44 @@
+
+
+.jumbotron {
+    background-color: #000000;
+}
+body {
+    font-family: 'Faster One', cursive;
+font-family: 'Roboto', sans-serif;
+}
+
 #schedule {
     display: block;
     background-color: gray;
     font: white;
     margin: 35px 35px 35px 35px;
+    
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    font-family: 'Roboto', sans-serif;
 }
 
 table {
     font: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Faster One', cursive;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    background:url("http://getwallpapers.com/wallpaper/full/7/d/d/87639.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
