@@ -89,7 +89,7 @@ $.when(event).done(function(){
     "</span></th><td><span class='train-dest'>" + snapshot.val().destination + 
     "</span></td><td><span class='first-train'>" + snapshot.val().firsttrain + 
     "</span></td><td><span class='train-frequency'>" + snapshot.val().frequency + 
-    " min</span></td><td><span class='until-next'>00 min</span></td></tr>");
+    " min</span></td><td><span class='until-next'>" + tMinutesTillTrain + " min</span></td></tr>");
  
 });
 
